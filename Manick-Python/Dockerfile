@@ -6,7 +6,9 @@ ENV PIP_DEFAULT_TIMEOUT=100 \
     # disable a pip version check to reduce run-time & log-spam
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
     # cache is useless in docker image, so disable to reduce image size
-    PIP_NO_CACHE_DIR=1 
+    PIP_NO_CACHE_DIR=1 \
+    # Timezone Toronto 
+    TZ="America/Toronto"
 
 WORKDIR /app
 
